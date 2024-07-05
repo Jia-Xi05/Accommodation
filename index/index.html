@@ -48,6 +48,7 @@
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
             padding: 20px;
             margin: 20px 0;
+            position: relative;
         }
         .bnb img {
             width: 100%;
@@ -55,14 +56,33 @@
             border-radius: 5px;
             margin-bottom: 10px;
         }
+        .to-top, .to-bottom,.to-top1{
+            position: absolute;
+            top: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .to-top {
+            right: 90px;
+        }
+        .to-top1 {
+            right: 20px;
+        }
+        .to-bottom {
+            right: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
 
         <div class="bnb">
+            <button class="to-bottom" onclick="scrollToBottom()">Bottom</button>
             <h1>河堤上的傻瓜</h1>
-            <p>價格 : 平日(日～五)</p>
             <ul>
                 <li>8000元 / 8人</li>
             </ul>
@@ -76,6 +96,8 @@
         </div>
 
         <div class="bnb">
+            <button class="to-top" onclick="scrollToTop()">Top</button>
+            <button class="to-bottom" onclick="scrollToBottom()">Bottom</button>
             <h1>峇里散散步</h1>
             <p>價格 : 平日(日～五)</p>
             <ul>
@@ -95,6 +117,8 @@
         </div>
 
         <div class="bnb">
+            <button class="to-top" onclick="scrollToTop()">Top</button>
+            <button class="to-bottom" onclick="scrollToBottom()">Bottom</button>
             <h1>有間民宿</h1>
             <p>價格 : 平日(日～四)</p>
             <ul>
@@ -111,6 +135,8 @@
         </div>
 
         <div class="bnb">
+            <button class="to-top" onclick="scrollToTop()">Top</button>
+            <button class="to-bottom" onclick="scrollToBottom()">Bottom</button>
             <h1>心想事成</h1>
             <p>價格 : 平日(日～五)</p>
             <ul>
@@ -126,6 +152,8 @@
         </div>
 
         <div class="bnb">
+            <button class="to-top" onclick="scrollToTop()">Top</button>
+            <button class="to-bottom" onclick="scrollToBottom()">Bottom</button>
             <h1>沐晨</h1>
             <p>價格 : 平日(日～五)</p>
             <ul>
@@ -143,6 +171,8 @@
         </div>
 
         <div class="bnb">
+            <button class="to-top" onclick="scrollToTop()">Top</button>
+            <button class="to-bottom" onclick="scrollToBottom()">Bottom</button>
             <h1>輕輕旅行</h1>
             <p>價格 : 平日(日～五)</p>
             <ul>
@@ -158,6 +188,8 @@
         </div>
 
         <div class="bnb">
+            <button class="to-top" onclick="scrollToTop()">Top</button>
+            <button class="to-bottom" onclick="scrollToBottom()">Bottom</button>
             <h1>墾丁龍水灣</h1>
             <p>價格 : 平日(日～五)</p>
             <ul>
@@ -175,6 +207,8 @@
         </div>
 
         <div class="bnb">
+            <button class="to-top" onclick="scrollToTop()">Top</button>
+            <button class="to-bottom" onclick="scrollToBottom()">Bottom</button>
             <h1>辰居</h1>
             <p>價格 : 平日(日～五)</p>
             <ul>
@@ -191,6 +225,8 @@
         </div>
 
         <div class="bnb">
+            <button class="to-top" onclick="scrollToTop()">Top</button>
+            <button class="to-bottom" onclick="scrollToBottom()">Bottom</button>
             <h1>春苑</h1>
             <p>價格 : 平日(日～五)</p>
             <ul>
@@ -206,6 +242,8 @@
         </div>
 
         <div class="bnb">
+            <button class="to-top" onclick="scrollToTop()">Top</button>
+            <button class="to-bottom" onclick="scrollToBottom()">Bottom</button>
             <h1>JU海遇民宿</h1>
             <p>價格 : 平日(日～五)</p>
             <ul>
@@ -221,6 +259,8 @@
         </div>
 
         <div class="bnb">
+            <button class="to-top" onclick="scrollToTop()">Top</button>
+            <button class="to-bottom" onclick="scrollToBottom()">Bottom</button>
             <h1>橘色旅店</h1>
             <p>價格 : 平日(日～五)</p>
             <ul>
@@ -240,6 +280,8 @@
         </div>
 
         <div class="bnb">
+            <button class="to-top" onclick="scrollToTop()">Top</button>
+            <button class="to-bottom" onclick="scrollToBottom()">Bottom</button>
             <h1>慢遊墾丁</h1>
             <p>價格 : 平日(日～五)</p>
             <ul>
@@ -257,6 +299,8 @@
         </div>
 
         <div class="bnb">
+            <button class="to-top" onclick="scrollToTop()">Top</button>
+            <button class="to-bottom" onclick="scrollToBottom()">Bottom</button>
             <h1>靚岩</h1>
             <p>價格 : 平日(日～五)</p>
             <ul>
@@ -273,6 +317,8 @@
         </div>
 
         <div class="bnb">
+            <button class="to-top" onclick="scrollToTop()">Top</button>
+            <button class="to-bottom" onclick="scrollToBottom()">Bottom</button>
             <h1>戀南灣</h1>
             <p>價格 : 平日(一～四)</p>
             <ul>
@@ -288,6 +334,8 @@
         </div>
 
         <div class="bnb">
+            <button class="to-top" onclick="scrollToTop()">Top</button>
+            <button class="to-bottom" onclick="scrollToBottom()">Bottom</button>
             <h1>樂雅居</h1>
             <p>價格 : 平日(日～五)</p>
             <ul>
@@ -303,6 +351,8 @@
         </div>
 
         <div class="bnb">
+            <button class="to-top" onclick="scrollToTop()">Top</button>
+            <button class="to-bottom" onclick="scrollToBottom()">Bottom</button>
             <h1>南境之美</h1>
             <p>價格 : 平日(日～五)</p>
             <ul>
@@ -318,6 +368,8 @@
         </div>
 
         <div class="bnb">
+            <button class="to-top" onclick="scrollToTop()">Top</button>
+            <button class="to-bottom" onclick="scrollToBottom()">Bottom</button>
             <h1>去旅行</h1>
             <p>價格 : 平日(日～五)</p>
             <ul>
@@ -335,6 +387,7 @@
         </div>
 
         <div class="bnb">
+            <button class="to-top1" onclick="scrollToTop()" right="20">Top</button>
             <h1>北歐風情</h1>
             <p>價格 : 平日(日～五)</p>
             <ul>
@@ -356,6 +409,16 @@
     <footer>
         <p style="text-align: center; font-size: 0.9em; margin-top: 20px;">&copy;Copy Right Taiwan Stay Network</p>
     </footer>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+
+        function scrollToBottom() {
+            window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'});
+        }
+    </script>
 
 </body>
 </html>
